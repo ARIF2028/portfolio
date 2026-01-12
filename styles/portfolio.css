@@ -164,6 +164,12 @@ nav .menu a {
     max-width: 827px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.skil-heading h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
 .card-container {
@@ -291,4 +297,77 @@ textarea {
     border: none;
     border-radius: 5px;
     color: #757575;
+}
+
+
+.hide {
+    display: none !important;
+}
+
+@media screen and (max-width:576px) {
+    nav .menu {
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+
+    #banner {
+        margin: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    /* about-section query */
+
+    #about .about-container {
+        padding: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    #about .about-container .about-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+
+
+
+
+    /* skill-section query */
+    .skil-container {
+        width: 100%;
+    }
+
+
+    #skil {
+        padding-top: 50px;
+    }
+
+    .skil-heading h2 {
+        font-size: 30px;
+    }
+
+    .card-container,
+    .footer-container,
+    .resume-container,
+    nav {
+        flex-direction: column;
+    }
+
+    .card,
+    .resume-container {
+        max-width: 100%;
+    }
+
+    .footer-container form input[type="text"],
+    textarea {
+        width: 100%;
+    }
 }
